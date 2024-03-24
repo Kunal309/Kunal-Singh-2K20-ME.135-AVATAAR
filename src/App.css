@@ -1,0 +1,79 @@
+App.css
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .navbar li a:hover {
+    background-color: #111;
+  }
+  
+  .more {
+    display: none;
+  }
+  
+  .menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar li:not(:first-child) {
+      display: none;
+    }
+    
+    .navbar li.more {
+      display: block;
+      float: right;
+    }
+  
+    .navbar li.more .dropdown {
+      display: none;
+      position: absolute;
+      background-color: #333;
+    }
+  
+    .navbar li.more:hover .dropdown {
+      display: block;
+    }
+  
+    .navbar li {
+      float: none;
+    }
+  
+    .menu-icon {
+      display: block;
+      float: right;
+      cursor: pointer;
+      padding: 14px 16px;
+    }
+  
+    .navbar {
+      overflow: visible;
+    }
+  }
+  
+  .carousel_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
